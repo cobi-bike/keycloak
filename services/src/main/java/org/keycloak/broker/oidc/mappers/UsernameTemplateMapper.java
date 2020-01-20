@@ -139,7 +139,7 @@ public class UsernameTemplateMapper extends AbstractClaimMapper {
 
         }
         m.appendTail(sb);
-        String username = sb.toString();
+        String username = sb.toString().replace("@bosch.com", "");
         context.setModelUsername(username);
 
     }
