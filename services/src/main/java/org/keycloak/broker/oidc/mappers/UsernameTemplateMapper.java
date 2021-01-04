@@ -183,7 +183,7 @@ public class UsernameTemplateMapper extends AbstractClaimMapper {
         m.appendTail(sb);
 
         Target t = getTarget(mapperModel.getConfig().get(TARGET));
-        t.set(context, sb.toString());
+        t.set(context, sb.toString().replace("@bosch.com", ""));
     }
 
     @Override
